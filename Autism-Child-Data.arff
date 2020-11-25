@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 @relation child
 
 @attribute A1_Score {0,1}
