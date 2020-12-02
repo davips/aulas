@@ -44,7 +44,6 @@ def Xy_local(filename, class_index=-1):
     Exemplo de uso: 
     X,y = Xy_local("/home/usuario/dataset.arff")
     """
-    !pip install liac-arff
     
     # Abre conjunto de dados.
     file = open(filename, "r")
