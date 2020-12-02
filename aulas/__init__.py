@@ -27,11 +27,9 @@ def df_remoto(url_do_arff, class_index=-1):
 
 #  Binariza atributos nominais (cada atributo com n valores distintos vira n colunas).
 from sklearn.preprocessing import OneHotEncoder as OHE
-# from sklearn.preprocessing import LabelEncoder as LE
 def nom_to_num(X):
   ohe = OHE()
-  le = LE()
-  return ohe.fit_transform(X)  #, le.fit_transform(y)
+  return ohe.fit_transform(X)
 
 
 # Importa de arquivo local (ou do google drive)
