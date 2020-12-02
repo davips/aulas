@@ -65,8 +65,8 @@ def acc_std(classifier, X, y):
 # Substitui valores ausentes pela moda.
 
 def imputa_moda(df, cols=None):
-    if cols is None:
-        cols = mode.columns
+  if cols is None:
+      cols = mode.columns
         
   # Tira a cópia do dataframe, pois vai alterá-lo.
   df_mode = df.copy()
