@@ -85,6 +85,7 @@ def df_to_Xy(df):
 # Plota árvore
 from sklearn.tree import plot_tree as plot
 import matplotlib.pyplot as plt
+from sklearn.tree import DecisionTreeClassifier as TREE
 def mostra_arvore(tree, X, y, altura=4):
   plt.figsize=150
   tree = TREE(criterion="gini", random_state=42, max_depth=altura)
